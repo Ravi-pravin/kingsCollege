@@ -275,11 +275,11 @@ ul {
 @media (max-width: 768px) {
     .navlogo {
         display: grid;
-        padding: 1rem 3rem 0rem 0rem;
+        padding: 1rem 0rem 0rem 1rem;
     }
 
     .navlogo img {
-        height: 5rem;
+        height: 3rem;
     }
 
     .disappear-responsive {
