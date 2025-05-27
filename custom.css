@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+header {
+    background-color: aliceblue;
+}
+
+main {
+    background-color: aliceblue;
+}
+
+footer {
+    background-color: #003366;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Roboto", sans-serif;
+}
+
+p,
+a,
+button {
+    font-family: "Roboto", sans-serif;
+}
+
+
+.row .blinkimg {
+    height: 1rem;
+    width: auto;
+}
+
+
+.hero-img {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    animation: changeBg 12s step-start infinite;
+}
+
+@keyframes changeBg {
+    0% {
+        background-image: url(./assets/images/her\ sports1.jpg);
+    }
+
+    25% {
+        background-image: url(./assets/images/hero\ f1.jpg);
+    }
+
+    50% {
+        background-image: url(./assets/images/hero\ f2.jpg);
+    }
+
+    75% {
+        background-image: url(./assets/images/hero\ GRAD.jpg);
+    }
+
+    100% {
+        background-image: url(./assets/images/hero\ ncc1.jpg);
+    }
+}
+
+
+
+.topnav p {
+    color: #ffffff;
+    font-size: 16px;
+    background-color: #003366;
+    padding: 10px 15px;
+}
+
+.topnav .topnavcontent {
+    background-color: #003366;
+    height: 10px;
+}
+
+.topnav {
+    position: relative;
+    padding: 0rem 0rem;
+    margin: 0rem 0rem;
+}
+
+.topnav p {
+    position: absolute;
+    right: 25rem;
+}
+
+.topnav img {
+    width: auto;
+    height: 7rem;
+    padding: 0rem 2rem;
+}
+
+.navlogo {
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.marquee-container {
+    overflow: hidden;
+    white-space: nowrap;
+    background-color: #003366;
+    /* Adjust to match your navbar's background */
+    color: #ffffff;
+    /* Adjust to match your navbar's text color */
+    padding: 10px 0;
+    position: relative;
+}
+
+.marquee-text {
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee 35s linear infinite;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+
+
+.navrow {
+    background-color: #003366;
+}
+
+
+.aboutusContent {
+    font-size: 16px;
+    color: white;
+    text-transform: uppercase;
+    background-color: #003366;
+    padding: 16px 16px;
+    cursor: pointer;
+}
+
+.secondSection h3 {
+    font-size: 25px;
+    color: #ffffff;
+    text-transform: uppercase;
+    background-color: #0369ce;
+    padding: 16px 16px;
+}
+
+
+.vertical-marquee {
+    height: 350px;
+    overflow: hidden;
+    color: #000000;
+    padding: 10px;
+    position: relative;
+}
+
+.vertical-marquee-content {
+    display: flex;
+    flex-direction: column;
+    animation: scrollUp 20s linear infinite;
+}
+
+.marquee-block p {
+    margin: 0;
+    padding: 5px 0;
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+@keyframes scrollUp {
+    0% {
+        transform: translateY(0%);
+    }
+
+    100% {
+        transform: translateY(-50%);
+    }
+}
+
+
+
+.sliderheading {
+    font-weight: 500;
+    color: #000000;
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+.carousel-container {
+    overflow: hidden;
+    width: 100%;
+    background: #ffffff;
+}
+
+.carousel-track {
+    display: flex;
+    width: max-content;
+    animation: scroll-left 60s linear infinite;
+}
+
+.carousel-track img {
+    width: 200px;
+    height: auto;
+    margin-right: 20px;
+}
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+
+
+
+
+
+.footersection h6 {
+    color: #ffcc33;
+    font-size: 20px;
+}
+
+.footersection a,
+ul {
+    color: #ffffff;
+    font-size: 16px;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.footersection p {
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.contactinfobox1 i {
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+
+.footericon {
+    font-size: 1.5rem;
+}
+
+.footersection iframe {
+    height: 8rem;
+    width: 15rem;
+}
+
+.copyrightSection p {
+    color: #ffffff;
+    font-size: 16px;
+}
+
+
+
+@media (max-width: 768px) {
+    .navlogo {
+        display: grid;
+        padding: 1rem 3rem 0rem 0rem;
+    }
+
+    .navlogo img {
+        height: 5rem;
+    }
+
+    .disappear-responsive {
+        display: none !important;
+    }
+
+
+}
